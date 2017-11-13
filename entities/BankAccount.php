@@ -17,6 +17,10 @@ class BankAccount {
   }
 
   //GETTERS
+  public function getIdAccount() {
+    return $this->idAccount;
+  }
+
   public function getNameAccount() {
     return $this->nameAccount;
   }

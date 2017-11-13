@@ -2,15 +2,36 @@
   include("template/header.php")
  ?>
 
-<p>This is the index view</p>
-<p>Bonjour</p>
+<h3>Bank Accounts</h3>
 
-<!-- On boucle sur la liste des utilisateurs et on affiche leurs noms -->
-<?php
-foreach ($bankAccounts as $bankAccount) {
-  echo "<p>" . $bankAccount->getNameAccount() .', '. $bankAccount->getAmountOfMoney() ." $ . </p>";
-}
- ?>
+<!-- TABLE WITH BANK ACCOUNTS -->
+<table class="table table-striped">
+
+  <thead>
+    <tr>
+      <th>Account Name</th>
+      <th>Amount of Money</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <?php
+    foreach ($bankAccounts as $bankAccount) {
+      ?>
+
+    <tr>
+      <td><?php echo $bankAccount->getNameAccount() ?></td>
+      <td><?php echo $bankAccount->getAmountOfMoney() ?></td>
+    </tr>
+
+    <?php
+    }
+    ?>
+
+  </tbody>
+</table>
+
 
  <form action="" method="post">
    <input type="text" name="name" value="">
