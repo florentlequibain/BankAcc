@@ -2,6 +2,18 @@
   include("template/header.php")
  ?>
 
+<!-- ADD ACCOUNT FORM DROPDOWN -->
+ <div class="container_form">
+
+ <button type="button" class="btn btn-primary button_show_projets"
+         onclick="displayYesNo()">Ajouter un projet</button>
+
+    <div id="YesNo" class="container">
+      <p>AAAAAA</p>
+    </div>
+
+  </div>
+
 <h3>Bank Accounts</h3>
 
 <!-- TABLE WITH BANK ACCOUNTS -->
@@ -11,6 +23,7 @@
     <tr>
       <th>Account Name</th>
       <th>Amount of Money</th>
+      <th>Actions</th>
     </tr>
   </thead>
 
