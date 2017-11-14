@@ -5,11 +5,31 @@
 <!-- ADD ACCOUNT FORM DROPDOWN -->
  <div class="container_form">
 
+<!-- DROPDOWN BUTTON -->
  <button type="button" class="btn btn-primary button_show_projets"
-         onclick="displayYesNo()">Ajouter un projet</button>
+         onclick="displayYesNo()">Add new Account</button>
 
     <div id="YesNo" class="container">
-      <p>AAAAAA</p>
+
+      <form action="" method="post">
+
+        <div class="form-group row">
+          <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+          <div class="col-sm-10">
+            <input name="account_name" type="text" class="form-control" id="inputEmail3" placeholder="Owner Name">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="inputAmount" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-10">
+            <input name="account_amount" type="number" class="form-control" id="inputPassword3" placeholder="Amount of Money">
+          </div>
+        </div>
+
+        <input type="submit" name="addAccount" value="Add New Account">
+      </form>
+
     </div>
 
   </div>
@@ -29,6 +49,7 @@
 
   <tbody>
 
+<!-- SHOW ALL ACCOUNT CLASSES -->
     <?php
     foreach ($bankAccounts as $bankAccount) {
       ?>
@@ -45,12 +66,6 @@
   </tbody>
 </table>
 
-
- <form action="" method="post">
-   <input type="text" name="name" value="">
-   <input type="text" name="age" value="">
-   <input type="submit" name="addUser" value="Envoyer">
- </form>
 
 <a href="presentation.php">découvrir notre entreprise</a>
 

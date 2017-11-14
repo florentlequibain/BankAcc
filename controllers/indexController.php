@@ -1,5 +1,5 @@
 <?php
-//I Charger les classes et outils nécessaires
+//LOAD CLASSES AND SERVICES
 require_once("../model/BankAccountManager.php");
 require_once("../services/formChecker.php");
 require_once("../entities/BankAccount.php");
